@@ -39,5 +39,9 @@ var makeCoffee = function() {
 	}
 }
 var cups = function() {
-	
+	$(".cup").on("click", function(){
+		this.hide()
+		this.append($('.machine'))
+		this.show()
+	})
 }
